@@ -87,7 +87,17 @@ public abstract class Person implements java.io.Serializable {
 	/*
 	 * Constructors Constructor with arguments
 	 */
-
+	
+	public Person(String Phone_number){
+		this("","","",new Date(),"",Phone_number,"");
+		this.phone_number=Phone_number;
+	}
+	
+	public Person(Date DOB){
+		this("","","",DOB,"","","");
+		this.DOB=DOB;
+	}
+	
 	public Person(String FirstName, String MiddleName, String LastName,
 			Date DOB, String Address, String Phone_number, String Email)
 	{

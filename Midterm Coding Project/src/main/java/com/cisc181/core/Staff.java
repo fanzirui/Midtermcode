@@ -1,5 +1,6 @@
 package com.cisc181.core;
 
+import java.util.Calendar;
 import java.util.Date;
 
 import com.cisc181.eNums.eTitle;
@@ -18,8 +19,19 @@ public class Staff extends Employee {
 	    public eTitle getTitle(){
 	        return this.Title;
 	    }
-
+	    
+	    
+	public static Date date(int year, int month, int day) {
+		Calendar date = Calendar.getInstance();
+		date.set(year, month, day);
+		return date.getTime();
+		} 
     
+	public Staff(double salary){
+    	
+    	this("","","",date(1992,6,8),"","","","",0,salary,date(2016,8,2),null);
+    	super.setSalary(salary);
+    }
 
     
 	public Staff(String FirstName, String MiddleName, String LastName,

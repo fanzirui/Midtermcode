@@ -37,7 +37,17 @@ public class Employee extends Person implements java.io.Serializable{
         this.hire = hire;
     }
 
+    // Zirui
+    public Employee(String Phone_number){
+    	super(Phone_number);
 
+    }
+    
+    //Zirui
+    public Employee(Date DOB){
+    	super(DOB);
+
+    }
     /**
      * 
      * @param office
@@ -56,7 +66,7 @@ public class Employee extends Person implements java.io.Serializable{
      */
     public void setSalary(double salary){
         this.salary = salary;
-    }
+    } 
 
     /**
      * getSalary - Returns salary field
@@ -76,5 +86,6 @@ public class Employee extends Person implements java.io.Serializable{
     public Date getHire(){
         return this.hire;
     }
+
 
 }
